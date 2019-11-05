@@ -1,0 +1,217 @@
+/* CSS Document */
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+/* ---------- FONTAWESOME ---------- */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+/* @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Josefin+Sans:400,600,700,400italic,600italic); */
+body{
+	font-family: 'josefin sans';
+  font-size: 16px;
+ 
+  
+}
+
+.hero{
+	height: 100vh;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 9;
+	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+}
+.hero.scrolled{
+	transform: translate3d(0, -100%, 0) scale(.75);
+	opacity: 0;
+}
+.hero-inner{
+		/* background-image: url("http://eskipaper.com/images/red-wallpaper-1.jpg");  */
+       
+  background-color:  silver;
+   background-size: cover;
+	background-position: center;
+	display: table;
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+  top: 0;
+  
+  
+}
+.hero-title{
+	display: table-cell;
+	vertical-align: middle;	
+  text-align: center;
+  color:red; 
+}
+
+.hero-title > h1, h2, h3, h4, h5, h6{
+  font-family: montserrat;
+  color:red; 
+}
+.font-2{
+	font-family: 'josefin sans';
+	font-weight: 700;
+}
+.title{ letter-spacing: .3em; text-transform: uppercase; }
+.text-light { color:red; }
+.font-alt{
+	font-family: 'georgia';
+	font-style: italic;
+	color: #666;
+}
+.hero{
+	overflow: hidden;
+	z-index: 1;
+}
+.content{
+	position: relative;
+	background-color:red;
+	border-top: 10px solid black;
+	padding: 0;	
+	margin: 0;
+	transition: all 1.6s cubic-bezier(0.86, 0, 0.07, 1);
+	transform: translate3d(0, 20px, 0) scale(.75);
+	opacity: 0;
+}
+.content.scrolled{
+	transform: translate3d(0, 0, 0) scale(1);	
+	opacity: 1;
+}
+.sd{
+ 
+  position: absolute;
+	bottom: 20px;
+	left: 50%;
+  background-color: rgb(27, 115, 247);
+  color: white;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.sd:hover, .sd:focus{
+
+  background: rgb(69, 110, 245);
+  color: white;
+}
+
+
+/* loginn */
+
+
+#login {
+    /* width: 280px;
+    margin-top: 50%; */
+     padding: 15%;
+    margin-left:15%;
+    
+  }
+  
+  #login form span {
+    background-color: #363b41;
+    border-radius: 3px 0px 0px 3px;
+    color: #606468;
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+  }
+
+  #login form input[type="text"] {
+    /* background-color: #f3f5f7; */
+    border-radius: 0px 3px 3px 0px;
+    color: #606468;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 230px;
+    height: 50px;
+  }
+  input[type="password"] {
+    /* background-color: #3b4148; */
+    border-radius: 0px 3px 3px 0px;
+    color: #606468;
+    margin-bottom: 1em;
+    padding: 0 16px;
+    width: 230px;
+    height: 50px;
+  }
+ 
+   .btn{
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    background-color:black;
+    color:red;
+    font-weight: bold;
+     margin-left: 10em; 
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px; 
+  }
+  
+  .btn:hover {
+    background-color: red;
+    height: 50px;
+  }
+  
+  #login > p {
+    text-align: center;
+  }
+ 
+  #login > p span {
+    padding-left: 5px;
+  }
+  
+.form-check
+{
+    text-align: center;
+    padding-left: 5px;
+    color:rgb(62, 9, 255);
+    display: block;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    /* width: 50px; */
+}
+  /* input {
+    border: none;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    padding: 0;
+    -webkit-appearance: none;
+  } */
+  
+  .container-fluid {
+    /* background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEW4BKbQWNFpk6WV3At1X-YRKNfZJVoO76npCj5L4eyPsrUYxn&s"); */
+    height: 100%;
+     width:100%;
+    position: fixed;
+    /* background-image: url("https://i.pinimg.com/originals/e4/98/1a/e4981a3dd4aa2fa6f0bc84cde9087c7a.jpg"); */
+    background-color: silver;
+    /* background-image: url("http://eskipaper.com/images/red-wallpaper-1.jpg"); */
+   background-size: cover;
+   background-repeat: no-repeat;
+
+  }
+#form
+{
+    align-content: center;
+    padding: 5%;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(1, 1, 10);
+}
+.col-form-label
+{
+  color:rgb(240, 240, 247);
+  
+}
